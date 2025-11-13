@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract office background",
+      "imageUrl": "https://images.unsplash.com/photo-1635783828476-3698e9b2c6df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBhYnN0cmFjdHxlbnwwfHx8fDE3NjMwMzkyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office abstract"
+    },
+    {
+      "id": "service-it-outsourcing",
+      "description": "Team of developers working",
+      "imageUrl": "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjI5ODE5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
+    },
+    {
+      "id": "service-software-development",
+      "description": "Code on a screen",
+      "imageUrl": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2Mjk2MDQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code screen"
+    },
+    {
+      "id": "service-venture-capital",
+      "description": "Handshake sealing a deal",
+      "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjMwMDcwNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business handshake"
+    },
+    {
+      "id": "service-secondaries",
+      "description": "Graph showing financial growth",
+      "imageUrl": "https://images.unsplash.com/photo-1742318412606-06916d82c6ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwZ3JhcGh8ZW58MHx8fHwxNzYzMDI3MDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance graph"
+    },
+    {
+      "id": "client-innovate-corp",
+      "description": "Logo for Innovate Corp",
+      "imageUrl": "https://images.unsplash.com/photo-1760037028517-e5cc6e3ebd3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    },
+    {
+      "id": "client-quantum-leap",
+      "description": "Logo for QuantumLeap",
+      "imageUrl": "https://images.unsplash.com/photo-1760138270903-d95903188730?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2dvJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjI5OTM3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo technology"
+    },
+    {
+      "id": "client-synergy-tech",
+      "description": "Logo for Synergy Tech",
+      "imageUrl": "https://images.unsplash.com/photo-1662027057465-bac8ada9a86a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvJTIwdGVjaHxlbnwwfHx8fDE3NjMwMjExMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo tech"
+    },
+    {
+      "id": "client-apex-solutions",
+      "description": "Logo for Apex Solutions",
+      "imageUrl": "https://images.unsplash.com/photo-1613571318861-8cbc4d41b22a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsb2dvJTIwZ2VvbWV0cmljfGVufDB8fHx8MTc2Mjk0NjU0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo geometric"
+    },
+    {
+      "id": "client-future-works",
+      "description": "Logo for FutureWorks",
+      "imageUrl": "https://images.unsplash.com/photo-1760553120264-98dd3d59fc02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvJTIwZnV0dXJpc3RpY3xlbnwwfHx8fDE3NjI5NTcyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo futuristic"
+    },
+    {
+      "id": "client-nexus-group",
+      "description": "Logo for Nexus Group",
+      "imageUrl": "https://images.unsplash.com/photo-1675352161918-2dc701738691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2dvJTIwbmV0d29ya3xlbnwwfHx8fDE3NjMwMzkyNjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo network"
+    },
+    {
+      "id": "resume-builder-hero",
+      "description": "Person working on a resume",
+      "imageUrl": "https://images.unsplash.com/photo-1609959914649-af7984c5b47f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXNrJTIwcmVzdW1lfGVufDB8fHx8MTc2MzAzOTI2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desk resume"
+    }
+  ]
 }
