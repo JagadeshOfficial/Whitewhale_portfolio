@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { CLIENT_LOGOS, SERVICES } from '@/lib/constants';
+import { SERVICES } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 
@@ -31,10 +31,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container px-4 mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 font-headline">
-            Strategic Investment & Technology Consulting
+            Shaping Tomorrow's Technology Today
           </h1>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-neutral-200 mb-8">
-            WhiteWhale partners with visionary companies to build a better future through capital investment and expert software engineering.
+            Empowering businesses with smart, scalable technology solutions. We shape what's next — today.
           </p>
           <Button size="lg" asChild>
             <Link href="/services/software-development">
@@ -42,6 +42,44 @@ export default function Home() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 md:py-24 bg-secondary/30">
+        <div className="container px-4 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-headline mb-6">About WhiteWhale</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                WhiteWhale Software Solutions is a leading technology company dedicated to transforming businesses through innovative digital solutions. With a team of experienced engineers and strategists, we partner with companies worldwide to solve complex technical challenges.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                Our mission is to deliver excellence through cutting-edge technology, strategic insights, and unwavering commitment to our clients' success. We believe in building long-term partnerships that drive sustainable growth and innovation.
+              </p>
+              <Button asChild>
+                <Link href="/about">Learn More About Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              </Button>
+            </div>
+            <div className="grid grid-cols-2 gap-6">
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <p className="text-muted-foreground">Projects Delivered</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-primary mb-2">150+</div>
+                <p className="text-muted-foreground">Team Members</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <p className="text-muted-foreground">Years Experience</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <div className="text-3xl font-bold text-primary mb-2">25+</div>
+                <p className="text-muted-foreground">Countries Served</p>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -88,26 +126,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Client Logos Section */}
+      {/* Why Choose Us Section */}
       <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container px-4 mx-auto">
-          <h2 className="text-center text-2xl md:text-3xl font-bold tracking-tight font-headline mb-2">Trusted by Industry Leaders</h2>
-          <p className="text-center text-muted-foreground mb-12">We are proud to partner with innovative companies of all sizes.</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-12">
-            {CLIENT_LOGOS.map((logo) => {
-              const logoImage = getImage(logo.image);
-              return logoImage ? (
-                <div key={logo.name} className="relative h-12 w-32 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                  <Image
-                    src={logoImage.imageUrl}
-                    alt={logo.name}
-                    fill
-                    className="object-contain"
-                    data-ai-hint={logoImage.imageHint}
-                  />
-                </div>
-              ) : null;
-            })}
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-headline">Why Choose WhiteWhale</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              We combine expertise, innovation, and dedication to deliver exceptional results.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-8">
+              <div className="mb-4 text-4xl">🚀</div>
+              <h3 className="text-xl font-bold mb-2">Innovation First</h3>
+              <p className="text-muted-foreground">
+                We stay ahead of technological trends and continuously innovate to provide cutting-edge solutions that give your business a competitive edge.
+              </p>
+            </Card>
+            <Card className="p-8">
+              <div className="mb-4 text-4xl">👥</div>
+              <h3 className="text-xl font-bold mb-2">Expert Team</h3>
+              <p className="text-muted-foreground">
+                Our talented engineers, architects, and strategists bring decades of combined experience across industries and technologies.
+              </p>
+            </Card>
+            <Card className="p-8">
+              <div className="mb-4 text-4xl">✅</div>
+              <h3 className="text-xl font-bold mb-2">Quality Assured</h3>
+              <p className="text-muted-foreground">
+                We maintain rigorous quality standards and best practices to ensure every project meets and exceeds your expectations.
+              </p>
+            </Card>
+            <Card className="p-8">
+              <div className="mb-4 text-4xl">🤝</div>
+              <h3 className="text-xl font-bold mb-2">Partnership Approach</h3>
+              <p className="text-muted-foreground">
+                We view every client as a long-term partner, collaborating closely to understand your goals and deliver tailored solutions.
+              </p>
+            </Card>
+            <Card className="p-8">
+              <div className="mb-4 text-4xl">⚡</div>
+              <h3 className="text-xl font-bold mb-2">Fast Delivery</h3>
+              <p className="text-muted-foreground">
+                Our agile methodologies and streamlined processes ensure rapid delivery without compromising on quality or attention to detail.
+              </p>
+            </Card>
+            <Card className="p-8">
+              <div className="mb-4 text-4xl">📈</div>
+              <h3 className="text-xl font-bold mb-2">Proven Results</h3>
+              <p className="text-muted-foreground">
+                Our track record speaks for itself with hundreds of successful projects that have transformed businesses and driven growth.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-primary text-white">
+        <div className="container px-4 mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Ready to Transform Your Business?</h2>
+          <p className="text-lg text-gray-100 mb-8 max-w-2xl mx-auto">
+            Let's collaborate to build innovative solutions that drive your business forward. Contact our team today to discuss your project.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary" asChild>
+              <Link href="/contact">
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="text-white border-white hover:bg-white/10">
+              <Link href="/services">Explore Services</Link>
+            </Button>
           </div>
         </div>
       </section>

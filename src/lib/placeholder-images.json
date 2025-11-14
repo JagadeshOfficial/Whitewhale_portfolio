@@ -31,46 +31,221 @@
       "imageHint": "finance graph"
     },
     {
-      "id": "client-innovate-corp",
-      "description": "Logo for Innovate Corp",
-      "imageUrl": "https://images.unsplash.com/photo-1760037028517-e5cc6e3ebd3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo abstract"
+      "id": "service-cloud-devops",
+      "description": "Cloud infrastructure and servers",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMHNlcnZlcnxlbnwwfHx8fDE3NjMwMzkyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud servers"
     },
     {
-      "id": "client-quantum-leap",
-      "description": "Logo for QuantumLeap",
-      "imageUrl": "https://images.unsplash.com/photo-1760138270903-d95903188730?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2dvJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjI5OTM3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo technology"
+      "id": "service-ai-data",
+      "description": "Artificial intelligence and data analytics",
+      "imageUrl": "https://media.istockphoto.com/id/2195607659/photo/ai-artificial-intelligence-technology-for-data-analysis-research-planning-and-work-generate.webp?a=1&b=1&s=612x612&w=0&k=20&c=nqgzw4nlXTa--oa_J0s0_z--mSMRVu7Dhmhg1SWKwEQ=",
+      "imageHint": "AI data analysis"
     },
     {
-      "id": "client-synergy-tech",
-      "description": "Logo for Synergy Tech",
-      "imageUrl": "https://images.unsplash.com/photo-1662027057465-bac8ada9a86a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvJTIwdGVjaHxlbnwwfHx8fDE3NjMwMjExMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo tech"
+      "id": "client-anglerfox",
+      "description": "Logo for Anglerfox",
+      "imageUrl": "/clients/anglerfox.png",
+      "imageHint": "anglerfox company logo"
     },
     {
-      "id": "client-apex-solutions",
-      "description": "Logo for Apex Solutions",
-      "imageUrl": "https://images.unsplash.com/photo-1613571318861-8cbc4d41b22a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsb2dvJTIwZ2VvbWV0cmljfGVufDB8fHx8MTc2Mjk0NjU0OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo geometric"
+      "id": "client-annular-technologies",
+      "description": "Logo for Annular Technologies",
+      "imageUrl": "/clients/annular-technologies.png",
+      "imageHint": "annular technologies logo"
     },
     {
-      "id": "client-future-works",
-      "description": "Logo for FutureWorks",
-      "imageUrl": "https://images.unsplash.com/photo-1760553120264-98dd3d59fc02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvJTIwZnV0dXJpc3RpY3xlbnwwfHx8fDE3NjI5NTcyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo futuristic"
+      "id": "client-branchx",
+      "description": "Logo for BranchX",
+      "imageUrl": "/clients/branchx.png",
+      "imageHint": "branchx company logo"
     },
     {
-      "id": "client-nexus-group",
-      "description": "Logo for Nexus Group",
-      "imageUrl": "https://images.unsplash.com/photo-1675352161918-2dc701738691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2dvJTIwbmV0d29ya3xlbnwwfHx8fDE3NjMwMzkyNjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo network"
+      "id": "client-cateina",
+      "description": "Logo for Cateina",
+      "imageUrl": "/clients/cateina.png",
+      "imageHint": "cateina company logo"
+    },
+    {
+      "id": "client-codersbrain",
+      "description": "Logo for CodersBrain",
+      "imageUrl": "/clients/codersbrain.png",
+      "imageHint": "codersbrain company logo"
+    },
+    {
+      "id": "client-discreet",
+      "description": "Logo for Discreet",
+      "imageUrl": "/clients/discreet.png",
+      "imageHint": "discreet company logo"
+    },
+    {
+      "id": "client-enlign",
+      "description": "Logo for Enlign",
+      "imageUrl": "/clients/enlign.png",
+      "imageHint": "enlign company logo"
+    },
+    {
+      "id": "client-jainfoway",
+      "description": "Logo for JainFoway",
+      "imageUrl": "/clients/jainfoway.png",
+      "imageHint": "jainfoway company logo"
+    },
+    {
+      "id": "client-mw",
+      "description": "Logo for MW",
+      "imageUrl": "/clients/mw.png",
+      "imageHint": "mw company logo"
+    },
+    {
+      "id": "client-nihon-technology",
+      "description": "Logo for Nihon Technology",
+      "imageUrl": "/clients/nihon-technology.png",
+      "imageHint": "nihon technology logo"
+    },
+    
+    {
+      "id": "client-oasys",
+      "description": "Logo for Oasys",
+      "imageUrl": "/clients/oasys.png",
+      "imageHint": "oasys company logo"
+    },
+    {
+      "id": "client-recro",
+      "description": "Logo for Recro",
+      "imageUrl": "/clients/recro.png",
+      "imageHint": "recro company logo"
+    },
+    {
+      "id": "client-revalsys",
+      "description": "Logo for RevallSys",
+      "imageUrl": "/clients/revalsys.png",
+      "imageHint": "revalsys company logo"
+    },
+    {
+      "id": "client-splenta",
+      "description": "Logo for Splenta",
+      "imageUrl": "/clients/splenta.png",
+      "imageHint": "splenta company logo"
+    },
+    {
+      "id": "client-step-to-soft",
+      "description": "Logo for Step to Soft",
+      "imageUrl": "/clients/step-to-soft.png",
+      "imageHint": "step to soft logo"
+    },
+    {
+      "id": "client-tailwebs",
+      "description": "Logo for TailWebs",
+      "imageUrl": "/clients/tailwebs.png",
+      "imageHint": "tailwebs company logo"
     },
     {
       "id": "resume-builder-hero",
       "description": "Person working on a resume",
       "imageUrl": "https://images.unsplash.com/photo-1609959914649-af7984c5b47f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXNrJTIwcmVzdW1lfGVufDB8fHx8MTc2MzAzOTI2NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "desk resume"
+    },
+    {
+      "id": "client-anglerfox",
+      "description": "Anglerfox logo",
+      "imageUrl": "/clients/anglerfox.png",
+      "imageHint": "anglerfox"
+    },
+    {
+      "id": "client-annular",
+      "description": "Annular Technologies logo",
+      "imageUrl": "/clients/annular-technologies.png",
+      "imageHint": "annular technologies"
+    },
+    {
+      "id": "client-branchx",
+      "description": "BranchX logo",
+      "imageUrl": "/clients/branchx.png",
+      "imageHint": "branchx"
+    },
+    {
+      "id": "client-cateina",
+      "description": "Cateina logo",
+      "imageUrl": "/clients/cateina.png",
+      "imageHint": "cateina"
+    },
+    {
+      "id": "client-codersbrain",
+      "description": "Coders Brain logo",
+      "imageUrl": "/clients/codersbrain.png",
+      "imageHint": "coders brain"
+    },
+    {
+      "id": "client-discreet",
+      "description": "Discreet logo",
+      "imageUrl": "/clients/discreet.png",
+      "imageHint": "discreet"
+    },
+    {
+      "id": "client-enlign",
+      "description": "Enlign logo",
+      "imageUrl": "/clients/enlign.png",
+      "imageHint": "enlign"
+    },
+    {
+      "id": "client-jainfoway",
+      "description": "Jain Foway logo",
+      "imageUrl": "/clients/jainfoway.png",
+      "imageHint": "jain foway"
+    },
+    {
+      "id": "client-mw",
+      "description": "MW logo",
+      "imageUrl": "/clients/mw.png",
+      "imageHint": "mw"
+    },
+    {
+      "id": "client-nihon-tech",
+      "description": "Nihon Technology logo",
+      "imageUrl": "/clients/nihon-technology.png",
+      "imageHint": "nihon technology"
+    },
+    {
+      "id": "client-nihon",
+      "description": "Nihon logo",
+      "imageUrl": "/clients/nihon.png",
+      "imageHint": "nihon"
+    },
+    {
+      "id": "client-oasys",
+      "description": "Oasys logo",
+      "imageUrl": "/clients/oasys.png",
+      "imageHint": "oasys"
+    },
+    {
+      "id": "client-recro",
+      "description": "Recro logo",
+      "imageUrl": "/clients/recro.png",
+      "imageHint": "recro"
+    },
+    {
+      "id": "client-revalsys",
+      "description": "Revalsys logo",
+      "imageUrl": "/clients/revalsys.png",
+      "imageHint": "revalsys"
+    },
+    {
+      "id": "client-splenta",
+      "description": "Splenta logo",
+      "imageUrl": "/clients/splenta.png",
+      "imageHint": "splenta"
+    },
+    {
+      "id": "client-step-to-soft",
+      "description": "Step to Soft logo",
+      "imageUrl": "/clients/step-to-soft.png",
+      "imageHint": "step to soft"
+    },
+    {
+      "id": "client-tailwebs",
+      "description": "Tailwebs logo",
+      "imageUrl": "/clients/tailwebs.png",
+      "imageHint": "tailwebs"
     }
   ]
 }
