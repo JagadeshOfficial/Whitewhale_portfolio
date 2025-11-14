@@ -102,6 +102,7 @@ export default function Home() {
                     src={logoImage.imageUrl}
                     alt={logo.name}
                     fill
+                    sizes="8rem"
                     className="object-contain"
                     data-ai-hint={logoImage.imageHint}
                   />
