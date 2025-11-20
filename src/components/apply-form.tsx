@@ -16,9 +16,13 @@ export function ApplyForm({ jobTitle, onClose }: ApplyFormProps) {
     email: '',
     phone: '',
     experience: '',
-    resume: '',
+    currentCompany: '',
+    linkedin: '',
+    education: '',
+    noticePeriod: '',
     coverLetter: '',
   });
+  const [resumeFile, setResumeFile] = useState<File | null>(null);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -31,20 +35,36 @@ export function ApplyForm({ jobTitle, onClose }: ApplyFormProps) {
     }));
   };
 
+  const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files && e.target.files[0];
+    if (file) setResumeFile(file);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    try {
+      const data = new FormData();
+      data.append('jobTitle', jobTitle);
+      Object.keys(formData).forEach((k) => {
+        data.append(k, (formData as any)[k] ?? '');
+      });
+      if (resumeFile) data.append('resume', resumeFile, resumeFile.name);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    setSubmitted(true);
-    setIsSubmitting(false);
-
-    // Close after 2 seconds
-    setTimeout(() => {
-      onClose();
-    }, 2000);
+      const res = await fetch('/api/apply', { method: 'POST', body: data });
+      const json = await res.json();
+      if (res.ok && json.success) {
+        setSubmitted(true);
+      } else {
+        alert('Failed to submit application. Please try again later.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('An error occurred while submitting your application.');
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => { onClose(); }, 2000);
+    }
   };
 
   return (
@@ -136,17 +156,40 @@ export function ApplyForm({ jobTitle, onClose }: ApplyFormProps) {
 
               {/* Resume Link / Upload */}
               <div>
-                <label className="block text-sm font-medium mb-2">Resume/CV Link *</label>
+                <label className="block text-sm font-medium mb-2">Upload Resume / CV *</label>
                 <input
-                  type="url"
+                  type="file"
                   name="resume"
-                  value={formData.resume}
-                  onChange={handleChange}
+                  accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  onChange={handleFile}
                   required
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="https://example.com/resume.pdf"
                 />
-                <p className="text-xs text-muted-foreground mt-1">Provide a link to your resume (Google Drive, Dropbox, etc.)</p>
+                <p className="text-xs text-muted-foreground mt-1">Upload your resume as PDF or Word document</p>
+              </div>
+
+              {/* Current Company */}
+              <div>
+                <label className="block text-sm font-medium mb-2">Current Company</label>
+                <input type="text" name="currentCompany" value={formData.currentCompany} onChange={handleChange} className="w-full px-4 py-2 border rounded-lg" />
+              </div>
+
+              {/* LinkedIn */}
+              <div>
+                <label className="block text-sm font-medium mb-2">LinkedIn Profile</label>
+                <input type="url" name="linkedin" value={formData.linkedin} onChange={handleChange} className="w-full px-4 py-2 border rounded-lg" placeholder="https://linkedin.com/in/yourprofile" />
+              </div>
+
+              {/* Education */}
+              <div>
+                <label className="block text-sm font-medium mb-2">Education</label>
+                <input type="text" name="education" value={formData.education} onChange={handleChange} className="w-full px-4 py-2 border rounded-lg" placeholder="e.g. B.Tech Computer Science" />
+              </div>
+
+              {/* Notice Period */}
+              <div>
+                <label className="block text-sm font-medium mb-2">Notice Period</label>
+                <input type="text" name="noticePeriod" value={formData.noticePeriod} onChange={handleChange} className="w-full px-4 py-2 border rounded-lg" placeholder="e.g. 1 month" />
               </div>
 
               {/* Cover Letter */}

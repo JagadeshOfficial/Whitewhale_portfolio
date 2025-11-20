@@ -1,0 +1,208 @@
+[
+  {
+    "id": "proj-cloud-migration",
+    "slug": "cloud-migration-success",
+    "title": "Cloud Migration Success",
+    "shortDescription": "Reduced infrastructure costs by 40% through strategic cloud migration.",
+    "client": "Global Finance Corp",
+    "services": ["Cloud Migration", "DevOps"],
+    "year": 2023,
+    "technologies": ["AWS", "Kubernetes", "Terraform", "Docker"],
+    "teamSize": 8,
+    "duration": "6 months",
+    "testimonial": {
+      "quote": "WhiteWhale's migration plan saved us money and improved reliability — the team was excellent.",
+      "author": "CTO, Global Finance Corp"
+    },
+    "caseStudyPdf": "/case-studies/cloud-migration.pdf",
+    "heroImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=90",
+    "gallery": [
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1526378728140-2f7a1c0a5c73?auto=format&fit=crop&w=1400&q=80"
+    ],
+    "content": "Challenge: The client operated a mission-critical on-premise platform with growing costs and scaling limitations.\\n\\nSolution: We planned and executed a phased migration to a cloud-native architecture. The work included rehosting select services, refactoring stateful components to managed cloud services, and introducing containerized workloads with an automated CI/CD pipeline. We added monitoring and alerting, cost-optimization measures, and a rollback strategy to minimize risk.\\n\\nOutcome: The migration reduced infrastructure costs by ~40% while improving scalability and deployment velocity. Post-migration, mean time to recovery improved and teams could iterate faster.",
+    "result": "40% infrastructure cost reduction; faster deployments and improved reliability"
+  },
+  {
+    "id": "proj-mobile-app",
+    "slug": "mobile-app-launch",
+    "title": "Mobile App Launch",
+    "shortDescription": "Developed and launched an award-winning mobile app reaching 1M+ downloads.",
+    "client": "E-Commerce Giants",
+    "services": ["Mobile Development", "UX/UI"],
+    "year": 2022,
+    "technologies": ["React Native", "TypeScript", "GraphQL"],
+    "teamSize": 10,
+    "duration": "9 months",
+    "testimonial": {
+      "quote": "The app exceeded our expectations; downloads and engagement skyrocketed.",
+      "author": "CEO, E-Commerce Giants"
+    },
+    "caseStudyPdf": "/case-studies/mobile-app.pdf",
+    "heroImage": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1800&q=90",
+    "gallery": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1526401485004-5bdfd0d5a3a0?auto=format&fit=crop&w=1400&q=80"
+    ],
+    "content": "Challenge: The client needed a performant native mobile app to support peak traffic and a modern UX.\\n\\nSolution: We designed and built native apps for iOS and Android with a modular architecture, integrated analytics, push notifications, and an experiment framework (A/B testing) to iterate on UX. We optimized networking layers and image delivery to reduce app size and launch times.\\n\\nOutcome: The app launched successfully, reached over 1M downloads in the first year, and achieved high user ratings due to performance and UX improvements.",
+    "result": "1M+ downloads; improved user engagement and ratings"
+  },
+  {
+    "id": "proj-ai-implementation",
+    "slug": "ai-implementation",
+    "title": "AI Implementation",
+    "shortDescription": "Built ML models improving operational efficiency and customer satisfaction.",
+    "client": "Healthcare Solutions",
+    "services": ["AI & ML", "Data Analytics"],
+    "year": 2024,
+    "technologies": ["Python", "TensorFlow", "Airflow", "Postgres"],
+    "teamSize": 6,
+    "duration": "4 months",
+    "testimonial": {
+      "quote": "Their ML pipeline reduced our manual workload and produced actionable insights quickly.",
+      "author": "Head of Data, Healthcare Solutions"
+    },
+    "caseStudyPdf": "/case-studies/ai-implementation.pdf",
+    "heroImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1800&q=90",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1581091870622-3a6f9b6f2b3d?auto=format&fit=crop&w=1400&q=80"
+    ],
+    "content": "Challenge: The client required actionable insights from fragmented healthcare data and automation to reduce manual review workloads.\\n\\nSolution: We built ML models for prediction and recommendations, implemented data pipelines, and created dashboards for clinical teams. We also set up retraining and model monitoring to ensure sustained performance.\\n\\nOutcome: Automation and ML reduced manual review time by 35% and improved key outcome metrics for the client.",
+    "result": "35% efficiency gain; improved patient outcomes"
+  }
+  ,
+  {
+    "id": "proj-lms-enterprise",
+    "slug": "enterprise-lms-platform",
+    "title": "Enterprise LMS Platform",
+    "shortDescription": "Scalable learning management system for large organizations with advanced analytics.",
+    "client": "Global University Network",
+    "services": ["Product Strategy", "Platform Engineering", "Analytics"],
+    "year": 2021,
+    "technologies": ["React", "Next.js", "Postgres", "Redis"],
+    "teamSize": 12,
+    "duration": "10 months",
+    "testimonial": {
+      "quote": "WhiteWhale built a platform that scaled to millions of learners while keeping costs predictable.",
+      "author": "VP Learning, Global University Network"
+    },
+    "caseStudyPdf": "/case-studies/lms-enterprise.pdf",
+    "heroImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1800&q=90",
+    "gallery": [
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1400&q=80"
+    ],
+    "content": "Challenge: Large institutions needed a modern LMS that supported multimedia, assessments, and enterprise SSO.\n\nSolution: We designed a modular platform with micro-frontends, integrated SSO, created an analytics pipeline for engagement metrics, and implemented offline content delivery for remote learners.\n\nOutcome: The platform supported 2M learners globally and reduced admin overhead by 60%.",
+    "result": "2M learners supported; 60% admin overhead reduction"
+  },
+  {
+    "id": "proj-fintech-payments",
+    "slug": "fintech-payments-replatform",
+    "title": "Payments Replatforming",
+    "shortDescription": "Modernized payments stack for high-volume fintech with PCI-compliant architecture.",
+    "client": "FastPay Solutions",
+    "services": ["Replatforming", "Security", "Payments"],
+    "year": 2020,
+    "technologies": ["Go", "Kafka", "Postgres", "AWS"],
+    "teamSize": 9,
+    "duration": "8 months",
+    "testimonial": {
+      "quote": "Their security-first approach allowed us to expand into new markets with confidence.",
+      "author": "Head of Engineering, FastPay Solutions"
+    },
+    "caseStudyPdf": "/case-studies/fintech-payments.pdf",
+    "heroImage": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1800&q=90",
+    "gallery": [
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1531497865142-0272d9f0d0a6?auto=format&fit=crop&w=1400&q=80"
+    ],
+    "content": "Challenge: Legacy monolithic payments stack struggled with throughput and compliance.\n\nSolution: We replatformed services to a streaming architecture, hardened PCI controls, introduced dual-write reconciliation, and implemented chaos testing.\n\nOutcome: Transaction throughput increased 4x and compliance audits completed with zero major findings.",
+    "result": "4x throughput increase; PCI compliance achieved"
+  },
+  {
+    "id": "proj-crm-modernization",
+    "slug": "crm-modernization",
+    "title": "CRM Modernization",
+    "shortDescription": "Modernized CRM and sales automation with integrated reporting and workflows.",
+    "client": "Enterprise Retail Co",
+    "services": ["CRM", "Automation", "Integration"],
+    "year": 2022,
+    "technologies": ["Node.js", "React", "Salesforce"],
+    "teamSize": 7,
+    "duration": "5 months",
+    "testimonial": {
+      "quote": "Their integrations unlocked actionable customer insights and faster sales cycles.",
+      "author": "Director Sales Operations, Enterprise Retail Co"
+    },
+    "caseStudyPdf": "/case-studies/crm-modernization.pdf",
+    "heroImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1800&q=90",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1526378728140-2f7a1c0a5c73?auto=format&fit=crop&w=1400&q=80"
+    ],
+    "content": "Challenge: Fragmented customer data and slow manual processes limited personalization.\n\nSolution: We centralized customer data, automated lead routing and built custom dashboards to surface high-value opportunities.\n\nOutcome: Sales conversion improved and time-to-close shortened by 25%.",
+    "result": "25% faster sales cycles; improved lead conversion"
+  }
+  ,
+  {
+    "id": "proj-communication-service",
+    "slug": "communication-service",
+    "title": "Real-time Communication Platform",
+    "shortDescription": "Scalable chat and collaboration platform with messaging, file sharing, and video calling.",
+    "client": "Confidential Client",
+    "services": ["Real-time Messaging", "Video Calling", "Security"],
+    "year": 2024,
+    "technologies": ["WebSockets", "Node.js", "React", "WebRTC"],
+    "teamSize": 6,
+    "duration": "5 months",
+    "caseStudyPdf": "/case-studies/communication-service.pdf",
+    "heroImage": "https://images.pexels.com/photos/3182817/pexels-photo-3182817.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    "gallery": [
+      "https://images.pexels.com/photos/3182817/pexels-photo-3182817.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    ],
+    "content": "A chat application connects users across the globe, enabling seamless, real-time communication. Whether for personal or professional use, these applications allow users to send text, voice, and multimedia messages instantly. Features include individual and group messaging, file sharing, notifications, and integration with contacts or social media platforms. Security is a key focus, with end-to-end encryption ensuring user privacy. Additionally, this chat app now offers video calling, voice messaging, and collaborative tools, making them versatile solutions for communication in both casual and formal contexts.",
+    "result": "Robust real-time messaging with secure multimedia and video features"
+  },
+  {
+    "id": "proj-ecommerce-platform",
+    "slug": "ecommerce-platform",
+    "title": "E‑Commerce Platform",
+    "shortDescription": "Modern e-commerce platform delivering seamless shopping and secure payments.",
+    "client": "Retailer Client",
+    "services": ["E-commerce Development", "Payments Integration", "UX/UI"],
+    "year": 2023,
+    "technologies": ["React", "Next.js", "Stripe", "Node.js"],
+    "teamSize": 8,
+    "duration": "6 months",
+    "caseStudyPdf": "/case-studies/ecommerce-platform.pdf",
+    "heroImage": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    "gallery": [
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    ],
+    "content": "E-commerce platforms enable users to browse products, compare prices, and make secure payments, all from the convenience of their devices. A successful platform combines a seamless user experience, secure payment gateways, efficient delivery logistics, and responsive customer service. Our approach focuses on performance, mobile-first UX, and a secure checkout optimized for conversions.",
+    "result": "Secure, high-converting storefront with streamlined checkout and improved mobile UX"
+  },
+  {
+    "id": "proj-education-lms",
+    "slug": "education-lms",
+    "title": "Learning Management System (LMS)",
+    "shortDescription": "Flexible LMS for delivering courses, assessments and tracking learner progress.",
+    "client": "Education Provider",
+    "services": ["LMS Development", "Content Management", "Assessments"],
+    "year": 2022,
+    "technologies": ["React", "Node.js", "Postgres"],
+    "teamSize": 7,
+    "duration": "7 months",
+    "caseStudyPdf": "/case-studies/education-lms.pdf",
+    "heroImage": "https://images.pexels.com/photos/4145198/pexels-photo-4145198.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    "gallery": [
+      "https://images.pexels.com/photos/4145198/pexels-photo-4145198.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+    ],
+    "content": "A Learning Management System (LMS) is a software application designed to deliver, manage, and track educational content and training programs. It provides tools to create and distribute lessons, track progress, assess performance, and enable interaction between students and instructors. Features include multimedia support, quizzes, assignments, discussion forums, and certification workflows.",
+    "result": "Improved learner engagement and streamlined course delivery"
+  }
+]

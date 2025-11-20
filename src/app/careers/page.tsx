@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Briefcase, Users, Trophy, Heart, Code2, TrendingUp } from 'lucide-react';
@@ -16,7 +16,23 @@ function getImage(id: string) {
 
 export default function CareersPage() {
   const [selectedJob, setSelectedJob] = useState<string | null>(null);
+  const [jobs, setJobs] = useState(JOB_OPENINGS);
   const heroImage = getImage('hero-background');
+
+  useEffect(() => {
+    let mounted = true;
+    fetch('/api/jobs')
+      .then((r) => r.json())
+      .then((data) => {
+        if (mounted && Array.isArray(data) && data.length) setJobs(data);
+      })
+      .catch(() => {
+        // keep fallback constants
+      });
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   return (
     <div className="flex flex-col">
@@ -97,42 +113,45 @@ export default function CareersPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            {JOB_OPENINGS.map((job) => (
-              <Card key={job.title} className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow border-l-4 border-l-primary">
+            {jobs.map((job: any) => (
+              <Card key={job.id || job.title} className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow border-l-4 border-l-primary">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
                       <CardTitle className="text-2xl">{job.title}</CardTitle>
                       <CardDescription className="flex items-center pt-3 text-base">
                         <MapPin className="h-5 w-5 mr-2 text-primary" />
-                        {job.location}
+                        {job.location}{job.remote ? ' • Remote' : ''}
                       </CardDescription>
+                      <div className="text-sm text-muted-foreground mt-1">{job.department} • {job.employmentType} • {job.experienceLevel}{job.salary ? ` • ${job.salary}` : ''}</div>
                     </div>
                     <Briefcase className="h-8 w-8 text-primary opacity-20" />
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground leading-relaxed">{job.description}</p>
-                  
-                  <div className="mt-6 pt-6 border-t">
-                    <h4 className="font-semibold text-sm mb-3">Key Responsibilities:</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>✓ Develop and maintain high-quality solutions</li>
-                      <li>✓ Collaborate with cross-functional teams</li>
-                      <li>✓ Contribute to innovative projects</li>
-                      <li>✓ Mentor junior team members</li>
-                    </ul>
-                  </div>
 
-                  <div className="mt-6 pt-6 border-t">
-                    <h4 className="font-semibold text-sm mb-3">What We're Looking For:</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>✓ Strong technical expertise</li>
-                      <li>✓ Problem-solving mindset</li>
-                      <li>✓ Team player attitude</li>
-                      <li>✓ Passion for continuous learning</li>
-                    </ul>
-                  </div>
+                  {job.responsibilities && (
+                    <div className="mt-6 pt-6 border-t">
+                      <h4 className="font-semibold text-sm mb-3">Key Responsibilities:</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        {String(job.responsibilities).split('\n').map((r: string, i: number) => (
+                          <li key={i}>✓ {r}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {job.requirements && (
+                    <div className="mt-6 pt-6 border-t">
+                      <h4 className="font-semibold text-sm mb-3">What We're Looking For:</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        {String(job.requirements).split('\n').map((r: string, i: number) => (
+                          <li key={i}>✓ {r}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </CardContent>
                 <CardFooter>
                   <Button 

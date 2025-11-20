@@ -2,9 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Star, Award, TrendingUp, Users } from 'lucide-react';
+import { Award, TrendingUp, Users } from 'lucide-react';
 import { CLIENT_LOGOS } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import projectsData from '@/data/projects.json';
 
 function getImage(id: string) {
   return PlaceHolderImages.find((img) => img.id === id);
@@ -18,37 +19,7 @@ export const metadata = {
 export default function ClientsPage() {
   const heroImage = getImage('hero-background');
 
-  // Client testimonials
-  const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      company: 'Tech Innovators Inc',
-      role: 'CTO',
-      content: 'WhiteWhale transformed our legacy system into a modern, scalable platform. Their team was professional, dedicated, and delivered on time.',
-      rating: 5
-    },
-    {
-      name: 'Michael Chen',
-      company: 'Global Finance Corp',
-      role: 'VP Operations',
-      content: 'Outstanding service! The DevOps solutions they implemented reduced our infrastructure costs by 40% and improved deployment speed significantly.',
-      rating: 5
-    },
-    {
-      name: 'Emma Williams',
-      company: 'Healthcare Solutions Ltd',
-      role: 'Chief Innovation Officer',
-      content: 'Their AI and data analytics team provided valuable insights that improved our patient outcomes. Highly recommended!',
-      rating: 5
-    },
-    {
-      name: 'David Martinez',
-      company: 'E-Commerce Giants',
-      role: 'CEO',
-      content: 'Best decision we made was partnering with WhiteWhale. Their mobile app development expertise helped us reach millions of users.',
-      rating: 5
-    }
-  ];
+  
 
   // Client success metrics
   const metrics = [
@@ -58,14 +29,22 @@ export default function ClientsPage() {
     { icon: '⏱️', label: 'On-Time Delivery', value: '99%' }
   ];
 
-  // Industry sectors
+  // Industry sectors (extended per request)
   const industries = [
-    { name: 'Technology', description: 'Software development and cloud solutions' },
-    { name: 'Finance', description: 'Banking systems and fintech applications' },
-    { name: 'Healthcare', description: 'Medical platforms and health tech' },
-    { name: 'E-Commerce', description: 'Online retail and marketplace solutions' },
-    { name: 'Manufacturing', description: 'Industry 4.0 and automation' },
-    { name: 'Education', description: 'EdTech and learning platforms' }
+    { name: 'Technology', icon: '💻', description: 'Software development and cloud solutions' },
+    { name: 'Finance', icon: '💰', description: 'Banking systems and fintech applications' },
+    { name: 'Healthcare', icon: '🏥', description: 'Medical platforms and health tech' },
+    { name: 'E-Commerce', icon: '🛒', description: 'Online retail and marketplace solutions' },
+    { name: 'Manufacturing', icon: '🏭', description: 'Industry 4.0 and automation' },
+    { name: 'Education', icon: '📚', description: 'EdTech and learning platforms' },
+
+    // Newly requested industries
+    { name: 'Real Estate', icon: '🏠', description: 'Property portals, listings and realty platforms' },
+    { name: 'Hospitality', icon: '🏨', description: 'Hotel, restaurant and booking solutions' },
+    { name: 'Tours And Travels', icon: '✈️', description: 'Travel booking, itinerary and tour management' },
+    { name: 'Pharma Industry', icon: '💊', description: 'Pharmaceutical software and regulatory workflows' },
+    { name: 'AutoMobiles', icon: '🚗', description: 'Automotive platforms, telematics and marketplaces' },
+    { name: 'HRMS (Human Resource Management System)', icon: '👥', description: 'HR, payroll and employee lifecycle systems' }
   ];
 
   return (
@@ -156,14 +135,7 @@ export default function ClientsPage() {
             {industries.map((industry, idx) => (
               <Card key={idx} className="p-8 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                  <span className="text-2xl">
-                    {idx === 0 && '💻'}
-                    {idx === 1 && '💰'}
-                    {idx === 2 && '🏥'}
-                    {idx === 3 && '🛒'}
-                    {idx === 4 && '🏭'}
-                    {idx === 5 && '📚'}
-                  </span>
+                  <span className="text-2xl">{industry.icon || '🏷️'}</span>
                   {industry.name}
                 </h3>
                 <p className="text-muted-foreground">{industry.description}</p>
@@ -173,36 +145,45 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Our Work / Projects (moved into Clients page) */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 font-headline">
-              What Our Clients Say
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Hear from our satisfied clients about their experience working with WhiteWhale.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 font-headline">Our Work / Projects</h2>
+            <p className="text-lg text-muted-foreground">Selected case studies and client projects showcasing our capabilities.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, idx) => (
-              <Card key={idx} className="p-8">
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-6 italic">&quot;{testimonial.content}&quot;</p>
-                <div className="border-t pt-4">
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role} at {testimonial.company}</p>
-                </div>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {(projectsData as any[]).map((p) => {
+              const imgSrc = p.heroImage || (p.gallery && p.gallery[0]);
+              return (
+                <Card key={p.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="relative h-48 w-full">
+                    {imgSrc ? (
+                      <Image src={imgSrc} alt={p.title} fill className="object-cover" />
+                    ) : (
+                      <div className="h-48 w-full bg-gray-100" />
+                    )}
+                  </div>
+
+                  <CardContent>
+                    <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">{p.shortDescription}</p>
+                    <div className="flex items-center justify-between">
+                      <div className="text-sm">{p.client}</div>
+                      <Button asChild>
+                        <Link href={`/projects/${p.slug}`}>View Case Study</Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
+
+      {/* Testimonials removed as requested */}
 
       {/* Why Choose Us Section */}
       <section className="py-16 md:py-24 bg-secondary/50">

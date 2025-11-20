@@ -35,23 +35,29 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        subject: '',
-        message: '',
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
+      const data = await res.json();
+      setIsSubmitting(false);
+      if (res.ok && data && data.success) {
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', phone: '', company: '', subject: '', message: '' });
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        // show an inline error by reusing submitSuccess state as false
+        // optionally, you can add a dedicated error state
+        console.error('Contact submit failed', data);
+        alert('Failed to send message. Please try again later.');
+      }
+    } catch (err) {
+      console.error(err);
+      setIsSubmitting(false);
+      alert('Failed to send message. Please check your connection and try again.');
+    }
   };
 
   const heroImage = getImage('hero-background');

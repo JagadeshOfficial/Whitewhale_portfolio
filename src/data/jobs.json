@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1763611334649",
+    "title": "Java Full Stack",
+    "department": "Computer sicent",
+    "employmentType": "Full TIme",
+    "experienceLevel": "Fresher",
+    "location": "Hyderābād, Telangāna, IND",
+    "salary": "",
+    "remote": true,
+    "description": "We are looking for an experienced Frontend Engineer to lead the development of our client-facing applications using Next.js and TypeScript.",
+    "responsibilities": "Lead frontend architecture\nWrite high-quality React/Next.js code\nMentor junior engineers",
+    "requirements": "5+ years experience in frontend development\nStrong TypeScript skills\nExperience with Next.js and SSR"
+  },
+  {
+    "id": "1",
+    "title": "Senior Frontend Engineer",
+    "department": "Engineering",
+    "employmentType": "Full-time",
+    "experienceLevel": "Senior",
+    "location": "Remote",
+    "salary": "Competitive",
+    "remote": true,
+    "description": "We are looking for an experienced Frontend Engineer to lead the development of our client-facing applications using Next.js and TypeScript.",
+    "responsibilities": "Lead frontend architecture\nWrite high-quality React/Next.js code\nMentor junior engineers",
+    "requirements": "5+ years experience in frontend development\nStrong TypeScript skills\nExperience with Next.js and SSR"
+  }
+]
