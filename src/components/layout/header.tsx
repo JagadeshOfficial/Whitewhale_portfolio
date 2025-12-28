@@ -30,7 +30,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">
             <img src="/logos/Logo.png" alt="Whitewhale Logo" className="h-8 w-8 md:h-12 md:w-12 object-contain" />
-            <span className="font-bold text-lg hidden sm:inline">Whitewhale Software Solutions</span>
+            <span className="font-bold text-lg hidden sm:inline">Whitewhale Software</span>
           </Link>
         </div>
 
@@ -64,7 +64,7 @@ export function Header() {
             )
           )}
         </nav>
-        
+
         <div className="flex items-center justify-end md:hidden">
           <button
             className="md:hidden"
@@ -83,7 +83,7 @@ export function Header() {
                 <div key={link.name} className="flex flex-col space-y-2">
                   <span className="font-semibold text-foreground/60 px-4 pt-2">{link.name}</span>
                   {link.dropdown.map((item) => (
-                     <Link
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="text-foreground/80 pl-8 py-2"
