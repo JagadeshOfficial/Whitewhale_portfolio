@@ -27,16 +27,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center justify-between">
-        <div></div>
-        
-        <div className="flex items-center gap-3 mr-12">
+        <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">
-            <Icons.logo className="h-12 w-12 text-primary" />
+            <img src="/logos/Logo.png" alt="Whitewhale Logo" className="h-8 w-8 md:h-12 md:w-12 object-contain" />
             <span className="font-bold text-lg hidden sm:inline">Whitewhale Software Solutions</span>
           </Link>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium ml-auto">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {NAV_LINKS.map((link) =>
             link.dropdown ? (
               <DropdownMenu key={link.name}>
@@ -67,7 +65,7 @@ export function Header() {
           )}
         </nav>
         
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-end md:hidden">
           <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
