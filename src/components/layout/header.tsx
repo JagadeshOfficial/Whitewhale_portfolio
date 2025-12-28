@@ -30,7 +30,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">
             <img src="/logos/Logo.png" alt="Whitewhale Logo" className="h-8 w-8 md:h-12 md:w-12 object-contain" />
-            <span className="font-bold text-lg hidden sm:inline">Whitewhale Software</span>
+            <span className="font-bold text-sm sm:text-base md:text-lg whitespace-nowrap">Whitewhale Software Solutions</span>
           </Link>
         </div>
 
